@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Exercice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_carte.css">
+</head>
+
+<body>
+      
+    <h1>ADANDEDJAN Brunelle</h1>
+        <img src="naruto.png" class="center" alt="ok">
+        <p class="anime">Bonjour je suis ADANDEDJAN Brunelle </p>
+    <p class="paragrape2">Etudiante en fin de formation en télécommunication et réseaux informatique. 
+        Fans la dance la bouffe,les mangas et la programmation.Forte personalité; un peu brutale et 
+        aime les forte sensation.Toujours à la recherche de la perfection et du meilleur dans mon évolution</p>
+       
+        <p id="vide">  </p>
+        <h1 class="Soulingner">Mon porte folio</h1>
+        <div>
+            <img src="Snapchat-60361741.jpg" alt="photos">
+            <img src="Snapchat-249694277.jpg" alt="photos">
+            <img src="Snapchat-820235285.jpg" alt="photos">
+        </div>
+        <div>
+            <img src="Snapchat-909874895.jpg" alt="photos">
+            <img src="Snapchat-938944129.jpg" alt="photos">
+            <img src="Snapchat-1061497467.jpg" alt="photos">
+        </div>
+        <div>
+            <img src="Snapchat-1288463138.jpg" alt="photos">
+            <img src="Snapchat-1449702425.jpg" alt="photos">
+            <img src="Snapchat-1586580474.jpg" alt="photos">
+        </div>
+        
+        <p id="vide">  </p>
+
+        <p id="heur">L'heur de cotonou et dans tous le pays est:</p>
+
+        <h1 id="heure"></h1>
+    <script>
+        var day = new Date();
+        var hours =day.getHours();
+        var minutes = day.getMinutes();
+        var seconds =day.getSeconds();
+        var heure_a_afficher = hours + ":" + minutes + ":" + seconds;
+        document.getElementById("heure").innerHTML = heure_a_afficher;
+      
+        function refresh(){
+             var t = 1000; // rafraîchissement en millisecondes
+             setTimeout('heure_a_afficher()',t)
+         }
+        
+    </script>
+
+     <p id="vide">  </p>
+
+<h1>Formulaire</h1>
+<form action="" method="POST" class="milieu">
+    <div>
+        <label for="number">Numéro de carte</label><br>
+        <input type="number" id="numero_carte" name="numero_carte">
+    </div>
+    <div>
+        <label for="name">Nom du propriétaire</label><br>
+       <input type="texte" id="name" name="user_name">
+    </div>
+    <div class="row" id="centrer">
+    <div class="col-md-2">
+
+        <label for="months">Mois:</label><br>
+
+        <select name="months" id="Mois">
+            <option>Janvier</option>
+            <option>Février</option>
+            <option>Mars</option>
+            <option>Avril</option>
+            <option>Mai</option>
+            <option>Juin</option>
+            <option>Juillet</option>
+            <option>Aout</option>
+            <option>Septembre</option>
+            <option>Octobre</option>
+            <option>Novembre</option>
+            <option>Décembre</option>
+        </select>
+    </div>
+    <div class="col-md-2">
+        <label for="years">Année:</label><br>
+        <input type="number" id="années" name="years">
+    </div>
+
+    <div class="col-md-2">
+        <label for="cv">CVV:</label><br>
+        <input type="number" id="cvv" name="cvv">
+    </div>
+   
+</div><br>
+    <div>
+        <input type="submit" value="Valider" class="bouton">
+    </div>
+
+
+</form>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

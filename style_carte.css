@@ -1,0 +1,21 @@
+body
+{
+    text-align: center;
+}
+.milieu
+{
+    text-align: center;
+    background-color: lightblue;
+    width: 2000px; 
+   
+    border-radius: 20px;
+}
+.centrer
+{
+    margin-left: 200px;
+}
+.bouton
+{
+background-color: whitesmoke;
+border-radius: 10px;
+}
