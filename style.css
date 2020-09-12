@@ -2,7 +2,7 @@
 body
 {
     text-align: center;
-    background-color: #caf5d2;
+    
 }
 .paragrape2
 {
@@ -63,12 +63,10 @@ a
     background-position: 500%;
     }
     }
-    #vide
+    #contoure
     {
-        border: #000 solid ;
-        width: 700px;
-        height: 2px;
-        margin-left: 32%;
+        border: 5px #000 solid ;
+       
     }
 #heur
 {
