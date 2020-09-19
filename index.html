@@ -15,17 +15,17 @@
 </head>
 
 <body>
-      <section id="contoure">
+      <section id="contoure" class="fonds1">
     <h1>ADANDEDJAN Brunelle</h1>
         <img src="Snapchat-249694277.jpg" class="center" alt="ok">
         <p class="anime">Bonjour je suis ADANDEDJAN Brunelle </p>
-    <p class="paragrape2">Etudiante en fin de formation en télécommunication et réseaux informatique. 
-        Fans la dance la bouffe,les mangas et la programmation.Forte personalité; un peu brutale et 
+    <p class="paragrape2">Etudiante en fin de formation en télécommunication et réseaux informatique. <br> 
+        Fan de dance de bouffe,des mangas et de la programmation.Forte personalité, un peu brutale et 
         aime les forte sensation.Toujours à la recherche de la perfection et du meilleur dans mon évolution</p>
     </section>
        
         <p id="vide">  </p>
-        <section id="contoure">
+        <section id="contoure" class="fonds2">
         <h1 class="Soulingner">Découvrire mes mangas préféré</h1>
         <div>
             <img src="naruto.png" alt="photos">
@@ -45,31 +45,47 @@
     </section>
         
         <p id="vide">  </p>
-        <section id="contoure">
+        <section id="contoure" class="fonds">
 
-        <p id="heur">L'heur de cotonou et dans tous le pays est:</p>
-
-        <h1 id="heure"></h1>
-    <script>
-        var day = new Date();
-        var hours =day.getHours();
-        var minutes = day.getMinutes();
-        var seconds =day.getSeconds();
-        var heure_a_afficher = hours + ":" + minutes + ":" + seconds;
-        document.getElementById("heure").innerHTML = heure_a_afficher;
-      
-        function refresh(){
-             var t = 1000; // rafraîchissement en millisecondes
-             setTimeout('heure_a_afficher()',t)
-         }
+            <div class="heure">
+            <h2> L'heure à cotonou et dans tout le pays </h2>
+            <h4 id="heure">08:10:02</h4>
+            
+           <script> 
         
-    </script>
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+        
+        function startTime() {
+            var day = new Date(); 
+            var hours = day.getHours(); 
+            var minutes = day.getMinutes(); 
+            var secondes = day.getSeconds(); 
+          
+            hours = checkTime(hours)
+            minutes = checkTime(minutes);
+            secondes = checkTime(secondes);
+            var heure_a_afficher = hours + ":" + minutes + ":" + secondes
+            document.getElementById("heure").innerHTML = heure_a_afficher
+            t = setTimeout(function () {
+                startTime()
+            }, 500); 
+        }
+        startTime();
+        </script>
+        
+        </div>
     </section id="contoure">
 
      <p id="vide">  </p>
-     <section>
+     <section class="fonds4">
 
 <h1>Formulaire</h1>
+<p>Vous povez mz contacter ici...</p>
 <form data-netlify="true" name="form" method="POST" class="milieu">
     <div>
         <label for="name">Nom</label><br>
