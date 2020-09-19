@@ -40,7 +40,6 @@ img
     background-color: rgba(252, 144, 144, 0.548);
     width: 130px;
     height: 30px;
-    margin-left: 47.5%;
     box-shadow: 5px 2px 2px rgba(138, 137, 137, 0.452);
 
 }
@@ -89,4 +88,8 @@ a
 #heur
 {
     text-size-adjust: 15px;
+}
+.calclatrice
+{
+
 }
